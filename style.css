@@ -1,116 +1,345 @@
-body {
-	font-family: 'Comfortaa', cursive;
-	color: #5a5a5a;
+/* ==========================================
+   CSS Variables for Easy Theme Management
+   ========================================== */
+:root {
+	--color-primary: #dea000;
+	--color-primary-dark: #cd9000;
+	--color-primary-light: #efb000;
+	--color-dark: #3C3939;
+	--color-text: #5a5a5a;
+	--color-white: #ffffff;
+	--color-black: #000000;
+
+	--font-primary: 'Comfortaa', cursive, sans-serif;
+	--font-secondary: 'Oswald', sans-serif;
+
+	--spacing-xs: 5px;
+	--spacing-sm: 10px;
+	--spacing-md: 20px;
+	--spacing-lg: 30px;
+	--spacing-xl: 5rem;
+
+	--transition-speed: 0.3s;
+	--border-radius: 20px;
 }
+
+/* ==========================================
+   Base Styles
+   ========================================== */
+body {
+	font-family: var(--font-primary);
+	color: var(--color-text);
+	line-height: 1.6;
+}
+
+/* ==========================================
+   Navigation Styles
+   ========================================== */
 .navbar {
 	font-size: 24px;
 }
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #efb000;
+
+.bg-dark-custom {
+	background-color: var(--color-dark) !important;
 }
-.logo {
-	height: 6vh;
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+	color: var(--color-primary-light);
+	transition: color var(--transition-speed) ease;
 }
+
 .nav-item {
-	margin-left: 30px;
+	margin-left: var(--spacing-lg);
 }
-.dropdown-item.active, .dropdown-item:active {
-	color: #fff;
-    text-decoration: none;
-    background-color: #dea000;
+
+.dropdown-item.active,
+.dropdown-item:active {
+	color: var(--color-white);
+	text-decoration: none;
+	background-color: var(--color-primary);
 }
-.dropdown-item:focus, .dropdown-item:hover {
-    color: whitesmoke;
-    text-decoration: none;
-    background-color: #dea000;
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	color: whitesmoke;
+	text-decoration: none;
+	background-color: var(--color-primary);
+	transition: background-color var(--transition-speed) ease;
 }
-.featurette-divider {
-    margin: 5rem 0;
+
+/* ==========================================
+   Button Styles
+   ========================================== */
+.btn-primary {
+	background-color: rgba(0, 0, 0, 0.7);
+	border-color: var(--color-white);
+	transition: all var(--transition-speed) ease;
 }
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: var(--color-primary-dark);
+	border-color: var(--color-primary);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .btn-secondary {
-	background-color: white;
-	color: black;
+	background-color: var(--color-white);
+	color: var(--color-black);
+	border: 2px solid var(--color-primary);
+	transition: all var(--transition-speed) ease;
 }
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border-color: var(--color-primary);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary:active {
+	background-color: var(--color-primary);
+	transform: translateY(0);
+}
+
+button:focus {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+/* ==========================================
+   Back to Top Button
+   ========================================== */
+#backToTopBtn {
+	display: none; /* Hidden by default */
+	position: fixed;
+	bottom: var(--spacing-md);
+	right: var(--spacing-lg);
+	z-index: 99;
+	height: 70px;
+	width: 70px;
+	background-color: var(--color-primary);
+	border: none;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	transition: all var(--transition-speed) ease;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#backToTopBtn:hover {
+	background-color: var(--color-primary-dark);
+	transform: translateY(-5px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+#backToTopBtn:active {
+	transform: translateY(-2px);
+}
+
+#backToTopBtn img {
+	height: 50px;
+	width: auto;
+	pointer-events: none;
+}
+
+/* ==========================================
+   Carousel Styles
+   ========================================== */
+.carousel-caption {
+	top: 70%;
+	bottom: auto;
+}
+
+.carousel-caption h2,
+.carousel-caption h3 {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	font-weight: 700;
+}
+
+/* ==========================================
+   Content Sections
+   ========================================== */
+.featurette-divider {
+	margin: var(--spacing-xl) 0;
+}
+
+.marketing h2 {
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+.marketing p {
+	margin-bottom: 1.5rem;
+}
+
+/* ==========================================
+   Gallery Styles
+   ========================================== */
 .img-offer {
-    width: 250px;
-    height: 250px;
-    padding: 5px;
+	width: 250px;
+	height: 250px;
+	padding: var(--spacing-xs);
+	object-fit: cover;
 }
+
 .a-dis {
-    display: block;
-    width: 100%;
-    height: 100%;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
+
 .gallery div {
 	width: 250px;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    padding: 0;
-    margin: 10px;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	margin: var(--spacing-sm);
+	transform: scale(1);
+	transition: transform var(--transition-speed) ease-in-out;
+}
 
+.gallery div:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-.btn-secondary:active {
-	background-color: #dea000;
-}
-.btn-secondary:hover {
-	background-color: #dea000;
-	border: none;
-}
-.contact {
-	min-height: 55vh;
-}
+
+/* ==========================================
+   Footer Styles
+   ========================================== */
 .foot {
-	background-color: #3C3939;
+	background-color: var(--color-dark);
+	padding: 2rem 0;
+	margin-top: 3rem;
 }
+
 .footer {
 	margin-left: 2vh;
 	margin-right: 2vh;
 }
-.btn-primary {
-	background-color: rgb(0, 0, 0, .7);
-	border-color: rgb(255, 255, 255);
-}
-.btn-primary:hover {
-	background-color: #cd9000;
-	border-color: #dea000;
-}
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    height: 70px;
-    width: 70px;
-    background-color: #dea000;
-    border: none;
-    border-radius: 20px;
-}
-#myBtn img {
-	height: 50px;
-	width: auto;
-	cursor: pointer;
 
+.footer img {
+	max-height: 120px;
+	width: auto;
+	transition: transform var(--transition-speed) ease;
 }
-.carousel-caption {
-    top: 70%;
-    bottom: auto;
-    text-shadow: black;
+
+.footer a:hover img,
+.footer a:focus img {
+	transform: scale(1.1);
 }
-.carousel-caption h3 {
-	text-shadow: 1px 1px rgb(0,0,0);
+
+/* ==========================================
+   Contact Page
+   ========================================== */
+.contact {
+	min-height: 55vh;
 }
-button:focus{
-    outline: none;
-    text-decoration: none;
-}
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
 @media screen and (min-width: 1600px) {
-  .carousel-item {
-	height: 100vh;
+	.carousel-item {
+		height: 100vh;
+	}
+
+	.carousel-item img {
+		object-fit: cover;
+		height: 100%;
+	}
 }
+
+@media screen and (max-width: 991px) {
+	.navbar {
+		font-size: 18px;
+	}
+
+	.nav-item {
+		margin-left: 0;
+		margin-top: 0.5rem;
+	}
+
+	.carousel-caption h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#backToTopBtn {
+		height: 50px;
+		width: 50px;
+		bottom: 15px;
+		right: 15px;
+	}
+
+	#backToTopBtn img {
+		height: 35px;
+	}
+
+	.carousel-caption {
+		top: 60%;
+	}
+
+	.carousel-caption h2 {
+		font-size: 1.2rem;
+	}
+
+	.btn-lg {
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+	}
+}
+
+/* ==========================================
+   Accessibility Improvements
+   ========================================== */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Focus styles for better keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 3px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* ==========================================
+   Print Styles
+   ========================================== */
+@media print {
+	.navbar,
+	#backToTopBtn,
+	.carousel-control-prev,
+	.carousel-control-next {
+		display: none !important;
+	}
 }

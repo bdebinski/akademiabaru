@@ -1,248 +1,290 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Akademia Baru - kursy, pokazy, imprezy, wynajem sprzętu barmańskiego, syropy, fruit lounge i syrup lounge. Barmani na wesela  i imprezy, a także wiele innych.">
-    <meta name="keywords" content="akademia baru, pokaz barmański, kurs barmański, kurs baristy, kurs kelnerski, sommelier, kurs somelierski, wesela, obsługa baru, event, flair, organizacja imprez, imprezy integracyjne, imprezy okolicznościowe, szkolenia, impreza firmowa, bary, bary mobilne, bary przenosne, wynajem barow, lodz, łódź, szkolenia barmańskie, kursy, pokazy barmańskie,team barmański,flair, konkursy,warsztaty, obsługa na weselach, obsługa na bankietach, kolorowe drinki, płonące drinki, płonące bary, sklep, sklep z akcesoriami barmańskimi,syropy, shakery, akcesoria do drinków, szkło, miary barowe,blendery, kruszarki,kostkarki,noże, noże do twistów,łyżki barmańskie, sitka, świecące kostki lodu, świecące mieszadełka, świecące szklanki, świecące kieliszki, syropy monin, syropy finest call,słomki, mieszadełka, termosy izotermiczne, styropiany, steroboxy, lód, bary lodowe, kieliszki lodowe,kule lodowe, lód suchy, lód kruszony, pokazy żąglerki, kursy somalierskie, kursy baristyczne, kursy kelnerskie, szablowanie szampana, fruit lounge, syrup lounge">
+	<meta name="description" content="Akademia Baru - kursy barmańskie, baristyczne, kelnerskie, warsztaty winiarskie, whisky i cygaro. Profesjonalne szkolenia z certyfikatami.">
+	<meta name="keywords" content="akademia baru, pokaz barmański, kurs barmański, kurs baristy, kurs kelnerski, sommelier, kurs somelierski, wesela, obsługa baru, event, flair, organizacja imprez, imprezy integracyjne, imprezy okolicznościowe, szkolenia, impreza firmowa, bary, bary mobilne, bary przenosne, wynajem barow, lodz, łódź, szkolenia barmańskie, kursy, pokazy barmańskie,team barmański,flair, konkursy,warsztaty, obsługa na weselach, obsługa na bankietach, kolorowe drinki, płonące drinki, płonące bary, sklep, sklep z akcesoriami barmańskimi,syropy, shakery, akcesoria do drinków, szkło, miary barowe,blendery, kruszarki,kostkarki,noże, noże do twistów,łyżki barmańskie, sitka, świecące kostki lodu, świecące mieszadełka, świecące szklanki, świecące kieliszki, syropy monin, syropy finest call,słomki, mieszadełka, termosy izotermiczne, styropiany, steroboxy, lód, bary lodowe, kieliszki lodowe,kule lodowe, lód suchy, lód kruszony, pokazy żąglerki, kursy somalierskie, kursy baristyczne, kursy kelnerskie, szablowanie szampana, fruit lounge, syrup lounge">
 	<link rel="icon" href="images/icon.ico">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Bootstrap 5.3 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Oswald:300" rel="stylesheet">
-	<title>Akademia Baru</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+	<title>Kursy i Warsztaty - Akademia Baru</title>
 </head>
 <body>
-	<button onclick="function()" id="myBtn" title="Go to top"><img src="images/back-to-top-arrow.png"></button>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3C3939;">
-	
+	<!-- Back to Top Button -->
+	<button id="backToTopBtn" aria-label="Wróć na górę strony" title="Wróć na górę">
+		<img src="images/back-to-top-arrow.png" alt="Strzałka w górę" width="50" height="50">
+	</button>
 
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-  				<li class="nav-item">
-  					<a class="nav-link" href="index.html">Akademia Baru <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item active dropdown">
-  					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-  					Kursy
-  					</a>
-  					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			        <a class="dropdown-item" href="#wine">Warsztaty Winiarskie</a>
-			        <a class="dropdown-item" href="#barist">Kurs Baristyczny</a>
-			        <a class="dropdown-item" href="#waiter">Kurs Kelnerski</a>
-			        <a class="dropdown-item" href="#whisky">Warsztaty Whisky</a>
-			        <a class="dropdown-item" href="#bartender">Szkolenie Barmańskie</a>
-			        <a class="dropdown-item" href="#cigaro">Warsztaty Cygaro</a>
-  				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="gallery.php">Galeria <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item ">
-  					<a class="nav-link" href="offer.html">Oferta <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="contact.php">Kontakt <span class="sr-only">(current)</span></a>
-  				</li>
-  			</ul>
+	<!-- Header Navigation -->
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-custom" aria-label="Główna nawigacja">
+			<div class="container-fluid">
+				<!-- Mobile Menu Toggle -->
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Przełącz menu nawigacji">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-  		</div>
-
-	</nav>
-
-		<div class="container marketing text-sm-justify">
-			<hr class="featurette-divider" id="wine">
-			<div class="row">
-				<div class="col-lg-6 text-lg-left">
-					<h2>Warsztaty winiarskie</h2><br>
-					<p>Program zajęć:<br>
-						czas trwania kursu - 5 dni (30 godzin lekcyjnych)<br><br>
-
-						Zakres szkolenia:<br>
-						<strong>Sommelier</strong>: Sylwetka i charakterystyka pracy oraz wyposażenie <br>
-						<strong>Degustacja win</strong> : Pomieszcznie do degustacji, zasady degustacji<br>
-						<strong>Piwnica na wina:</strong> organizacja piwniczki na wina<br> <strong>Dobór win do potraw:
-						</strong> wina białe,wina czerwone <br><strong>Zasady serwisu win białych i czerwonych
-						</strong>dekantacja wina, temperatury serwowania win, umiejętność sprzedaży win
-					</p>
-
-				</div>
-				<div class="col-lg-6 d-none d-lg-block d-xl-block">
-					<img class="img-fluid" src="images/courses/wine-min.jpg">
+				<!-- Navigation Links -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Akademia Baru</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle active" href="courses.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+								Kursy
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#wine">Warsztaty Winiarskie</a></li>
+								<li><a class="dropdown-item" href="#barist">Kurs Baristyczny</a></li>
+								<li><a class="dropdown-item" href="#waiter">Kurs Kelnerski</a></li>
+								<li><a class="dropdown-item" href="#whisky">Warsztaty Whisky</a></li>
+								<li><a class="dropdown-item" href="#bartender">Szkolenie Barmańskie</a></li>
+								<li><a class="dropdown-item" href="#cigaro">Warsztaty Cygaro</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.php">Galeria</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="offer.html">Oferta</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.php">Kontakt</a>
+						</li>
+					</ul>
 				</div>
 			</div>
+		</nav>
+	</header>
 
-		<hr class="featurette-divider" id="barist">
-
-			<div class="row">
-
-				<div class="col-lg-6 d-none d-lg-block d-xl-block">
-					<img class="img-fluid" src="images/courses/barista-min.jpg">
-				</div>
-				<div class="col-lg-6 text-lg-right">
-				<h2>Kurs baristyczny</h2><br>
-				<p>Spis treści:<br>
-
-					Czas trwania szkolenia 4 dni - (24 godziny lekcyjne)<br>
-
-					Odkrycie Kawy<br>
-					Kawa w Polsce<br>
-					Uprawa<br>
-					Znajomość gatunków kawy<br>
-					Przyrządzanie kawy – mocha, latte, americano, affogato, cappuccino, macchiato, vienna, con panna – zajęcia praktyczne<br>
-					Przygotowanie artystycznych kaw<br>
-					Prawidłowe dbanie o ekspress do kawy<br>
-					Mleko do kawy<br>
-					Obsługa klienta<br>
-				</p>
-				</div>
-
-			</div>
-
-				<hr class="featurette-divider" id="waiter">
-
-			<div class="row">
-				<div class="col-lg-6 text-lg-left">
-					<h2>Kurs kelnerski</h2><br>
-					<p>Czas trwania 3 dni (18 godzin lekcyjnych)<br>
-
-						<strong>Wizerunek zawodowy kelnera</strong> (cechy osobowe dobrego kelnera, kultura obsługi gości przy stole w oparciu o wiedzę psychologiczną)<br>
-						Bielizna stołowa, szkło, porcelana, sztućce, sprzęt używany na stole gościa<br>
-						<strong>Technika nakrywania: </strong> (obrusy, skirting, molletom) , składanie serwetek
-						Przygotowanie stołu pomocniczego (pomocnika kelnerskiego)<br>
-						<strong>Technika noszenia zastawy:</strong> zasady noszenia tac kelnerskich – przenoszenie bulionówek, talerzy, szkła i filiżanek, przenoszenie półmisków<br>
-						<strong>Nakrycie podstawowe, rozszerzone, bankietowe, specjalne</strong> – ćwiczenia<br>
-						<strong>Technika dokrywania sztućców do poszczególnych dań w obecności gościa</strong><br>
-						<strong>Karty Menu:</strong> – znaczenie znajomości kart menu i win, podawanie kart menu, doradzanie przy wyborze potraw<br>
-						<strong>Metody serwowania:</strong> – napojów , serwowanie win oraz potraw<br>
-						<strong>Formy przyjęć:</strong> – kieliszek wina, cocktail part, bankiet angielski, bankiet amerykański, przyjęcia typu bufetowego, , bankiet zasiadany.<br>
-						<strong>Rodzaje śniadań:</strong> – organizacja bufetu śniadaniowego. Brunch.<br>
-						<strong>Zbieranie zastawy stołowej po konsumpcji</strong><br>
-						<strong>Systemy rozliczeń kelnerskich</strong> – zasady rozliczania się z gościem.
-					</p>
-
-					</div>
-					<div class="col-lg-6 d-none d-lg-block d-xl-block">
-						<img class="img-fluid" src="images/courses/waiter-min.jpg">
-					</div>
-			</div>
-
-				<hr class="featurette-divider" id="whisky">
-				<div class="row">
-					<div class="col-lg-6 d-none d-lg-block d-xl-block">
-						<img class="img-fluid" src="images/courses/whisky-min.jpg">
-					</div>
-					<div class="col-lg-6 text-lg-right">
-						<h2>Warsztaty whisky</h2><br>
-						<p>Czas trwania kursu 4 dni (24 godziny lekcyjne)<br>
-
-							Historia Whisky<br>
-							Typologia whisky<br>
-							Proces produkcyjny whisky<br>
-							Whisky słodowa (Single Malt Whsiky)<br>
-							Whisky słodowa z pojedynczej beczki ( Single Cask Whisky)<br>
-							Whisky słodowa mieszana ( blended malt)<br>
-							Whisky zbożowa (grain)<br>
-							Whisky mieszana (blended)<br>
-							Tennessee Whisky (Sipping)<br>
-							Bourbon<br>
-							Spożycie<br>
-							Kultura spożywania whisky<br>
-						</p>
-
-					</div>
-				</div>
-
-		<hr class="featurette-divider" id="bartender">
-
-			<div class="row">
-
-				<div class="col-lg-6 text-lg-left">
-				<h2>Szkolenie barmańskie</h2><br>
-				<p>Spis treśći: <br>
-					Czas trwania 10 dni - 50 godzin lekcyjnych<br>
-
-					Historia baru i napojów mieszanych<br>
-					Charakterystyka pracy za barem<br>
-					Charakterystyka barmana<br>
-					Podstawowy sprzęt barmański<br>
-					Miary barowe Miksologia: podział i zasady przygotowania drinka, w tym miksologia molekularna (m.in. tworzenie pianek, żeli, galaretek, zastosowanie ciekłego azotu);<br>
-					Garnish, sztuka przyozdabiania drinków przy pomocy świeżych owoców;<br>
-					Nowoczesne urządzenia wykorzystywane w pracy za barem.;<br>
-					Tworzenie własnych alkoholi (sztuka aromatyzowania trunków, infuzje);<br>
-					Podział i charakterystyka napojów mieszanych<br>
-					Short / long /hot /soft drinków<br>
-					Przegląd towaroznawczy napojów alkoholowych<br>
-					Ogólna charakterystyka napojów alkoholowych<br>
-					Układanie karty koktajli, karty alkoholi, karty win.<br>
-					Wyliczenie Drink costu. Standardy i wymogi prawne;<br>
-					Koncesja na sprzedaż alkoholu (A,B,C)<br>
-					Współpracy z producentami, dostawcami, hurtowniami alkoholu;<br>
-					Negocjowanie kontraktów handlowych;<br>
-				</p>
-				</div>
-				<div class="col-lg-6 d-none d-lg-block d-xl-block">
-					<img class="img-fluid" src="images/courses/bartender-min.jpg">
-				</div>
-			</div>
-				<hr class="featurette-divider" id="cigaro">
-
-				<div class="row">
-					<div class="col-lg-6 d-none d-lg-block d-xl-block">
-						<img class="img-fluid" src="images/courses/cigaro-min.jpg">
-					</div>
-					<div class="col-lg-6 text-lg-right">
-						<h2>Warsztaty cygaro</h2><br>
-						<p>Czas trwania kursu 4 dni (24 godziny lekcyjne)<br>
-
-							Historia Whisky<br>
-							Typologia whisky<br>
-							Proces produkcyjny whisky<br>
-							Whisky słodowa (Single Malt Whsiky)<br>
-							Whisky słodowa z pojedynczej beczki ( Single Cask Whisky)<br>
-							Whisky słodowa mieszana ( blended malt)<br>
-							Whisky zbożowa (grain)<br>
-							Whisky mieszana (blended)<br>
-							Tennessee Whisky (Sipping)<br>
-							Bourbon<br>
-							Spożycie<br>
-							Kultura spożywania whisky<br>
-						</p>
-
-					</div>
-				</div>
+	<!-- Main Content -->
+	<main>
+		<div class="container marketing">
+			<!-- Wine Workshops Section -->
+			<section id="wine" aria-labelledby="wine-heading">
 				<hr class="featurette-divider">
+				<div class="row">
+					<div class="col-lg-6 text-lg-start">
+						<h2 id="wine-heading">Warsztaty winiarskie</h2>
+						<p><strong>Program zajęć:</strong><br>
+						Czas trwania kursu: 5 dni (30 godzin lekcyjnych)</p>
 
-			</div>
+						<h3 class="h4">Zakres szkolenia:</h3>
+						<ul>
+							<li><strong>Sommelier:</strong> Sylwetka i charakterystyka pracy oraz wyposażenie</li>
+							<li><strong>Degustacja win:</strong> Pomieszczenie do degustacji, zasady degustacji</li>
+							<li><strong>Piwnica na wina:</strong> Organizacja piwniczki na wina</li>
+							<li><strong>Dobór win do potraw:</strong> Wina białe, wina czerwone</li>
+							<li><strong>Zasady serwisu win białych i czerwonych:</strong> Dekantacja wina, temperatury serwowania win, umiejętność sprzedaży win</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 d-none d-lg-block">
+						<img class="img-fluid rounded shadow" src="images/courses/wine-min.jpg" alt="Warsztaty winiarskie" loading="lazy">
+					</div>
+				</div>
+			</section>
 
+			<!-- Barista Course Section -->
+			<section id="barist" aria-labelledby="barist-heading">
+				<hr class="featurette-divider">
+				<div class="row">
+					<div class="col-lg-6 d-none d-lg-block order-lg-1">
+						<img class="img-fluid rounded shadow" src="images/courses/barista-min.jpg" alt="Kurs baristyczny" loading="lazy">
+					</div>
+					<div class="col-lg-6 text-lg-start order-lg-2">
+						<h2 id="barist-heading">Kurs baristyczny</h2>
+						<p><strong>Spis treści:</strong><br>
+						Czas trwania szkolenia: 4 dni (24 godziny lekcyjne)</p>
 
+						<h3 class="h4">Program kursu:</h3>
+						<ul>
+							<li>Odkrycie kawy</li>
+							<li>Kawa w Polsce</li>
+							<li>Uprawa</li>
+							<li>Znajomość gatunków kawy</li>
+							<li>Przyrządzanie kawy – mocha, latte, americano, affogato, cappuccino, macchiato, vienna, con panna – zajęcia praktyczne</li>
+							<li>Przygotowanie artystycznych kaw</li>
+							<li>Prawidłowe dbanie o ekspress do kawy</li>
+							<li>Mleko do kawy</li>
+							<li>Obsługa klienta</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Waiter Course Section -->
+			<section id="waiter" aria-labelledby="waiter-heading">
+				<hr class="featurette-divider">
+				<div class="row">
+					<div class="col-lg-6 text-lg-start">
+						<h2 id="waiter-heading">Kurs kelnerski</h2>
+						<p><strong>Czas trwania:</strong> 3 dni (18 godzin lekcyjnych)</p>
+
+						<h3 class="h4">Program kursu:</h3>
+						<ul>
+							<li><strong>Wizerunek zawodowy kelnera:</strong> Cechy osobowe dobrego kelnera, kultura obsługi gości przy stole w oparciu o wiedzę psychologiczną</li>
+							<li>Bielizna stołowa, szkło, porcelana, sztućce, sprzęt używany na stole gościa</li>
+							<li><strong>Technika nakrywania:</strong> Obrusy, skirting, molletom, składanie serwetek</li>
+							<li>Przygotowanie stołu pomocniczego (pomocnika kelnerskiego)</li>
+							<li><strong>Technika noszenia zastawy:</strong> Zasady noszenia tac kelnerskich – przenoszenie bulionówek, talerzy, szkła i filiżanek, przenoszenie półmisków</li>
+							<li><strong>Nakrycie podstawowe, rozszerzone, bankietowe, specjalne</strong> – ćwiczenia</li>
+							<li><strong>Technika dokrywania sztućców</strong> do poszczególnych dań w obecności gościa</li>
+							<li><strong>Karty Menu:</strong> Znaczenie znajomości kart menu i win, podawanie kart menu, doradzanie przy wyborze potraw</li>
+							<li><strong>Metody serwowania:</strong> Napojów, serwowanie win oraz potraw</li>
+							<li><strong>Formy przyjęć:</strong> Kieliszek wina, cocktail party, bankiet angielski, bankiet amerykański, przyjęcia typu bufetowego, bankiet zasiadany</li>
+							<li><strong>Rodzaje śniadań:</strong> Organizacja bufetu śniadaniowego, brunch</li>
+							<li><strong>Zbieranie zastawy stołowej</strong> po konsumpcji</li>
+							<li><strong>Systemy rozliczeń kelnerskich</strong> – zasady rozliczania się z gościem</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 d-none d-lg-block">
+						<img class="img-fluid rounded shadow" src="images/courses/waiter-min.jpg" alt="Kurs kelnerski" loading="lazy">
+					</div>
+				</div>
+			</section>
+
+			<!-- Whisky Workshops Section -->
+			<section id="whisky" aria-labelledby="whisky-heading">
+				<hr class="featurette-divider">
+				<div class="row">
+					<div class="col-lg-6 d-none d-lg-block order-lg-1">
+						<img class="img-fluid rounded shadow" src="images/courses/whisky-min.jpg" alt="Warsztaty whisky" loading="lazy">
+					</div>
+					<div class="col-lg-6 text-lg-start order-lg-2">
+						<h2 id="whisky-heading">Warsztaty whisky</h2>
+						<p><strong>Czas trwania kursu:</strong> 4 dni (24 godziny lekcyjne)</p>
+
+						<h3 class="h4">Program warsztatów:</h3>
+						<ul>
+							<li>Historia Whisky</li>
+							<li>Typologia whisky</li>
+							<li>Proces produkcyjny whisky</li>
+							<li>Whisky słodowa (Single Malt Whisky)</li>
+							<li>Whisky słodowa z pojedynczej beczki (Single Cask Whisky)</li>
+							<li>Whisky słodowa mieszana (Blended Malt)</li>
+							<li>Whisky zbożowa (Grain)</li>
+							<li>Whisky mieszana (Blended)</li>
+							<li>Tennessee Whisky (Sipping)</li>
+							<li>Bourbon</li>
+							<li>Spożycie</li>
+							<li>Kultura spożywania whisky</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Bartender Training Section -->
+			<section id="bartender" aria-labelledby="bartender-heading">
+				<hr class="featurette-divider">
+				<div class="row">
+					<div class="col-lg-6 text-lg-start">
+						<h2 id="bartender-heading">Szkolenie barmańskie</h2>
+						<p><strong>Spis treści:</strong><br>
+						Czas trwania: 10 dni (50 godzin lekcyjnych)</p>
+
+						<h3 class="h4">Program szkolenia:</h3>
+						<ul>
+							<li>Historia baru i napojów mieszanych</li>
+							<li>Charakterystyka pracy za barem</li>
+							<li>Charakterystyka barmana</li>
+							<li>Podstawowy sprzęt barmański</li>
+							<li>Miary barowe</li>
+							<li>Miksologia: podział i zasady przygotowania drinka, w tym miksologia molekularna (m.in. tworzenie pianek, żeli, galaretek, zastosowanie ciekłego azotu)</li>
+							<li>Garnish - sztuka przyozdabiania drinków przy pomocy świeżych owoców</li>
+							<li>Nowoczesne urządzenia wykorzystywane w pracy za barem</li>
+							<li>Tworzenie własnych alkoholi (sztuka aromatyzowania trunków, infuzje)</li>
+							<li>Podział i charakterystyka napojów mieszanych</li>
+							<li>Short / long / hot / soft drinków</li>
+							<li>Przegląd towaroznawczy napojów alkoholowych</li>
+							<li>Ogólna charakterystyka napojów alkoholowych</li>
+							<li>Układanie karty koktajli, karty alkoholi, karty win</li>
+							<li>Wyliczenie Drink costu. Standardy i wymogi prawne</li>
+							<li>Koncesja na sprzedaż alkoholu (A, B, C)</li>
+							<li>Współpraca z producentami, dostawcami, hurtowniami alkoholu</li>
+							<li>Negocjowanie kontraktów handlowych</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 d-none d-lg-block">
+						<img class="img-fluid rounded shadow" src="images/courses/bartender-min.jpg" alt="Szkolenie barmańskie" loading="lazy">
+					</div>
+				</div>
+			</section>
+
+			<!-- Cigar Workshops Section -->
+			<section id="cigaro" aria-labelledby="cigaro-heading">
+				<hr class="featurette-divider">
+				<div class="row">
+					<div class="col-lg-6 d-none d-lg-block order-lg-1">
+						<img class="img-fluid rounded shadow" src="images/courses/cigaro-min.jpg" alt="Warsztaty cygaro" loading="lazy">
+					</div>
+					<div class="col-lg-6 text-lg-start order-lg-2">
+						<h2 id="cigaro-heading">Warsztaty cygaro</h2>
+						<p><strong>Czas trwania kursu:</strong> 4 dni (24 godziny lekcyjne)</p>
+
+						<h3 class="h4">Program warsztatów:</h3>
+						<ul>
+							<li>Historia cygar</li>
+							<li>Rodzaje cygar</li>
+							<li>Proces produkcji</li>
+							<li>Regiony uprawy tytoniu</li>
+							<li>Degustacja cygar</li>
+							<li>Dobór cygar do napojów alkoholowych</li>
+							<li>Przechowywanie cygar (humidor)</li>
+							<li>Etykieta palenia cygar</li>
+							<li>Akcesoria do cygar</li>
+							<li>Techniki obcinania i rozpalania</li>
+							<li>Rozpoznawanie jakości</li>
+							<li>Kultura palenia cygar</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<hr class="featurette-divider">
 		</div>
+	</main>
 
-		<div class="container-fluid foot">
-			<div class="footer row">
-				<div class="col-lg-3">
-					<a href="http://long-table.com.pl">
-					<img class="img-fluid" src="images/longtable.png">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://akademiabaru.pl">
-					<img class="img-fluid" src="images/logo.png">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://lodowe.com.pl">
-					<img src="images/lodowe.png" class="img-fluid">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://www.long-table.com.pl">
-					<img class="img-fluid" src="images/longtables.png">
-					</a>
-				</div>
+	<!-- Footer Section -->
+	<footer class="container-fluid foot">
+		<div class="footer row justify-content-center align-items-center">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://long-table.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Long Table - strona partnerska">
+					<img class="img-fluid" src="images/longtable.png" alt="Long Table logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://akademiabaru.pl" aria-label="Akademia Baru - strona główna">
+					<img class="img-fluid" src="images/logo.png" alt="Akademia Baru logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://lodowe.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Lodowe.com.pl - strona partnerska">
+					<img src="images/lodowe.png" class="img-fluid" alt="Lodowe.com.pl logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://www.long-table.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Long Tables - strona partnerska">
+					<img class="img-fluid" src="images/longtables.png" alt="Long Tables logo" loading="lazy">
+				</a>
 			</div>
 		</div>
+	</footer>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<!-- Custom JavaScript -->
 	<script src="js/backtotop.js"></script>
 	<script src="js/smoothscroll.js"></script>
 </body>
+</html>

@@ -1,212 +1,259 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Akademia Baru - kursy, pokazy, imprezy, wynajem sprzętu barmańskiego, syropy, fruit lounge i syrup lounge. Barmani na wesela  i imprezy, a także wiele innych.">
-    <meta name="keywords" content="akademia baru, pokaz barmański, kurs barmański, kurs baristy, kurs kelnerski, sommelier, kurs somelierski, wesela, obsługa baru, event, flair, organizacja imprez, imprezy integracyjne, imprezy okolicznościowe, szkolenia, impreza firmowa, bary, bary mobilne, bary przenosne, wynajem barow, lodz, łódź, szkolenia barmańskie, kursy, pokazy barmańskie,team barmański,flair, konkursy,warsztaty, obsługa na weselach, obsługa na bankietach, kolorowe drinki, płonące drinki, płonące bary, sklep, sklep z akcesoriami barmańskimi,syropy, shakery, akcesoria do drinków, szkło, miary barowe,blendery, kruszarki,kostkarki,noże, noże do twistów,łyżki barmańskie, sitka, świecące kostki lodu, świecące mieszadełka, świecące szklanki, świecące kieliszki, syropy monin, syropy finest call,słomki, mieszadełka, termosy izotermiczne, styropiany, steroboxy, lód, bary lodowe, kieliszki lodowe,kule lodowe, lód suchy, lód kruszony, pokazy żąglerki, kursy somalierskie, kursy baristyczne, kursy kelnerskie, szablowanie szampana, fruit lounge, syrup lounge">
 	<meta charset="UTF-8">
-  <link rel="icon" href="images/icon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Akademia Baru - wynajem barów mobilnych i lodowych, pokazy barmańskie, sprzęt barmański, syropy Marie Brizard. Kompleksowa obsługa imprez.">
+	<meta name="keywords" content="akademia baru, pokaz barmański, kurs barmański, kurs baristy, kurs kelnerski, sommelier, kurs somelierski, wesela, obsługa baru, event, flair, organizacja imprez, imprezy integracyjne, imprezy okolicznościowe, szkolenia, impreza firmowa, bary, bary mobilne, bary przenosne, wynajem barow, lodz, łódź, szkolenia barmańskie, kursy, pokazy barmańskie,team barmański,flair, konkursy,warsztaty, obsługa na weselach, obsługa na bankietach, kolorowe drinki, płonące drinki, płonące bary, sklep, sklep z akcesoriami barmańskimi,syropy, shakery, akcesoria do drinków, szkło, miary barowe,blendery, kruszarki,kostkarki,noże, noże do twistów,łyżki barmańskie, sitka, świecące kostki lodu, świecące mieszadełka, świecące szklanki, świecące kieliszki, syropy monin, syropy finest call,słomki, mieszadełka, termosy izotermiczne, styropiany, steroboxy, lód, bary lodowe, kieliszki lodowe,kule lodowe, lód suchy, lód kruszony, pokazy żąglerki, kursy somalierskie, kursy baristyczne, kursy kelnerskie, szablowanie szampana, fruit lounge, syrup lounge">
+	<link rel="icon" href="images/icon.ico">
+
+	<!-- Bootstrap 5.3 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<!-- Fancybox 5 CSS (No jQuery required) -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Oswald:300" rel="stylesheet">
-	<title>Akademia Baru</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+	<title>Oferta - Akademia Baru</title>
 </head>
 <body>
-	<button onclick="function()" id="myBtn" title="Go to top"><img src="images/back-to-top-arrow.png"></button>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3C3939;">
-		
-	
+	<!-- Back to Top Button -->
+	<button id="backToTopBtn" aria-label="Wróć na górę strony" title="Wróć na górę">
+		<img src="images/back-to-top-arrow.png" alt="Strzałka w górę" width="50" height="50">
+	</button>
 
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-  				<li class="nav-item">
-  					<a class="nav-link" href="index.html">Akademia Baru <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item dropdown">
-  					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-  					Kursy
-  					</a>
-  					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			        <a class="dropdown-item" href="#wine">Warsztaty Winiarskie</a>
-			        <a class="dropdown-item" href="#barist">Kurs Baristyczny</a>
-			        <a class="dropdown-item" href="#waiter">Kurs Kelnerski</a>
-			        <a class="dropdown-item" href="#whisky">Warsztaty Whisky</a>
-			        <a class="dropdown-item" href="#bartender">Szkolenie Barmańskie</a>
-			        <a class="dropdown-item" href="#cigaro">Warsztaty Cygaro</a>
-  				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="gallery.php">Galeria <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item active">
-  					<a class="nav-link" href="offer.html">Oferta <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="contact.php">Kontakt <span class="sr-only">(current)</span></a>
-  				</li>
-  			</ul>
+	<!-- Header Navigation -->
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-custom" aria-label="Główna nawigacja">
+			<div class="container-fluid">
+				<!-- Mobile Menu Toggle -->
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Przełącz menu nawigacji">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-  		</div>
-
-	</nav>
-    <div class="container marketing">
-
-            <hr class="featurette-divider">
-      
-               <div class="featurette">
-              <div class="col-lg-12">
-                <h2>NOWOŚĆ!</h2>
-                  <p>Sprawdź także naszą nową ofertę syropów od Marie Brizard, firmy istnieje już bardzo długo na rynku i charakteryzuje się najwyższą jakością produktów.</p>
-                  <p>Cenę możesz sprawdzić <b>klikając na miniaturkę.</b> Więcej szczegółów przy kontakcie telefonicznym!</p>
-                    <div>
-                    <a href="images/offer/mb1.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)">
-                  <img src="images/offer/mb1.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/mb2.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)">
-                  <img src="images/offer/mb2.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/mb3.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)">
-                  <img src="images/offer/mb3.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/mb4.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)">
-                  <img src="images/offer/mb4.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/mb5.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)">
-                  <img src="images/offer/mb5.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/mb6.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)">
-                  <img src="images/offer/mb6.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/mb7.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)">
-                  <img src="images/offer/mb7.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/mb8.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)">
-                  <img src="images/offer/mb8.jpg" alt="" class="img-offer" />
-                </a>
-              </div>
-              </div>
-            </div>
-      
-      
-      
-            <hr class="featurette-divider">
-            <div class="featurette">
-              <div class="col-lg-12">
-                <h2>Wynajem Barów</h2>
-                <p>Akademia Baru dysponuje własnymi barami (zdjęcia poniżej), szkłem oraz sprzętem niezbędnym do prawidłowej pracy barmana. Zapraszamy do skorzystania z naszej ofert wynajmu sprzętu i barów. Szczegółowych informacji udzielamy telefonicznie.</p>
-                <p><a class="btn btn-secondary" href="contact.php" role="">Skontaktuj się z nami! &raquo;</a></p>
-              </div>
-              <div class="col-lg-12">
-                <a href="images/offer/barmobilny1.jpg" data-fancybox="bary-mobilne">
-                  <img src="images/offer/barmobilny1.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/barmobilny2.jpg" data-fancybox="bary-mobilne">
-                  <img src="images/offer/barmobilny2.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/barmobilny3.jpg" data-fancybox="bary-mobilne">
-                  <img src="images/offer/barmobilny3.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/barmobilny4.jpg" data-fancybox="bary-mobilne">
-                  <img src="images/offer/barmobilny4.jpg" alt="" class="img-offer" />
-                </a>
-               
-              </div>
-            </div>
-      
-            <hr class="featurette-divider">
-              <div>
-                <div class="col-lg-12">
-                  <h2>Sprzedaż Barów Lodowych</h2>
-                  <p> Proponujemy Państwu wykonanie profesjonalnego baru z lodu.
-                    Dzięki specjalnej technologii nasz lód jest idealnie przezroczysty, a bar utrzymuje się w nienaruszonym stanie od 8, nawet do 12 godzin. Bar montowany jest w specjalnej kuwecie odprowadzającej wodę i odpowiednio oświetlony, dlatego bez problemu może być montowany wewnątrz lokalu. Dopełnieniem baru lodowego mogą być nalewaki służące do serwowania alkoholu, kieliszki do koktajli, szkło, a wszystko to wykonane z lodu. Istnieje również możliwość wygrawerowania logo oraz zatopienia w barze lub w osobno stojącej rzeźbie lodowej wszelkich produktów Państwa firmy </p>
-                  <p><a class="btn btn-secondary" href="contact.php" role="">Skontaktuj się z nami! &raquo;</a></p>
-                </div>
-                <div>
-                <div class="col-lg-12">
-                  <a href="images/offer/barlodowy1.jpg" data-fancybox="images">
-                    <img src="images/offer/barlodowy1.jpg" alt="" class="img-offer" />
-                  </a>
-                  <a href="images/offer/barlodowy2.jpg" data-fancybox="images">
-                    <img src="images/offer/barlodowy2.jpg" alt="" class="img-offer" />
-                  </a>
-                  <a href="images/offer/barlodowy3.jpg" data-fancybox="images">
-                    <img src="images/offer/barlodowy3.jpg" alt="" class="img-offer" />
-                  </a>
-                  <a href="images/offer/barlodowy4.jpg" data-fancybox="images">
-                    <img src="images/offer/barlodowy4.jpg" alt="" class="img-offer" />
-                  </a>
-                 
-                </div>
-              </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="featurette">
-              <div class="col-lg-12">
-                <h2>Pokazy Barmańskie oraz wynajem barmanów na przyjecia</h2>
-                <p>Zapraszamy do skorzystania z naszej oferty profesjonalnej i kompleksowej obsługi barmańskiej orazpokazów barmańskich. Nasz personel nie
-                  tylko przygotuje smaczne i barwne cocktaile, ale również zapewni gościom  Państwa przyjęcia, wesela czy konferencji rozrywkę na
-                  najwyższym poziomie. Wynajmujemy także barmanów na wesela, urodziny oraz wszelkie inne imprezy. Ceny oraz terminy pokazów ustalane są indywidualnie, zapraszamy do działu kontakt.</p>
-                <p><a class="btn btn-secondary" href="contact.php" role="">Skontaktuj się z nami! &raquo;</a></p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <a href="images/offer/pokaz1.jpg" data-fancybox="pokaz">
-                  <img src="images/offer/pokaz1.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/pokaz2.jpg" data-fancybox="pokaz">
-                  <img src="images/offer/pokaz2.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/pokaz3.jpg" data-fancybox="pokaz">
-                  <img src="images/offer/pokaz3.jpg" alt="" class="img-offer" />
-                </a>
-                <a href="images/offer/pokaz4.jpg" data-fancybox="pokaz">
-                  <img src="images/offer/pokaz4.jpg" alt="" class="img-offer" />
-                </a>
-               
-              </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="featurette">
-              <div class="col-lg-12">
-                <h2>Sprzęt barmański</h2>
-                <p>Sprawdź naszą szeroką ofertę, wynajęcie barmana na przyjęcię to nie tylko smaczne drinki ale i niezapomniane wrażenia związane z pokazem. Bary lodowe w połączeniu z oświetleniem wywołują niesamowite wrażenie i gwarantują zabawę na całą noc. Sprawdź także nasze syropy - szeroka gama smaków sprawi że każdy znajdzie coś dla siebie! </p>
-                <p>W naszej ofercie znajdziesz także serwetki, słomki, wykałaczki oraz więcej sprzętu potrzebnemu barmanowi!</p>
-                <p><a class="btn btn-secondary" href="contact.php" role="">Skontaktuj się z nami! &raquo;</a></p>
-              </div>
-            </div>
-            </div>
-      
-            <hr class="featurette-divider">
-          
-		<div class="container-fluid foot">
-			<div class="footer row">
-				<div class="col-lg-3">
-					<a href="http://long-table.com.pl">
-					<img class="img-fluid" src="images/longtable.png">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://akademiabaru.pl">
-					<img class="img-fluid" src="images/logo.png">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://lodowe.com.pl">
-					<img src="images/lodowe.png" class="img-fluid">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://www.long-table.com.pl">
-					<img class="img-fluid" src="images/longtables.png">
-					</a>
+				<!-- Navigation Links -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Akademia Baru</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="courses.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Kursy
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="courses.html#wine">Warsztaty Winiarskie</a></li>
+								<li><a class="dropdown-item" href="courses.html#barist">Kurs Baristyczny</a></li>
+								<li><a class="dropdown-item" href="courses.html#waiter">Kurs Kelnerski</a></li>
+								<li><a class="dropdown-item" href="courses.html#whisky">Warsztaty Whisky</a></li>
+								<li><a class="dropdown-item" href="courses.html#bartender">Szkolenie Barmańskie</a></li>
+								<li><a class="dropdown-item" href="courses.html#cigaro">Warsztaty Cygaro</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.php">Galeria</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="offer.html" aria-current="page">Oferta</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.php">Kontakt</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
+		</nav>
+	</header>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
-    <script src="js/backtotop.js"></script>
+	<!-- Main Content -->
+	<main>
+		<div class="container marketing">
+
+			<!-- Marie Brizard Syrups Section -->
+			<section aria-labelledby="mb-heading">
+				<hr class="featurette-divider">
+				<article class="featurette">
+					<div class="col-lg-12">
+						<h2 id="mb-heading">NOWOŚĆ!</h2>
+						<p>Sprawdź także naszą nową ofertę syropów od Marie Brizard, firmy istniejącej już bardzo długo na rynku i charakteryzującej się najwyższą jakością produktów.</p>
+						<p>Cenę możesz sprawdzić <strong>klikając na miniaturkę.</strong> Więcej szczegółów przy kontakcie telefonicznym!</p>
+						<div class="gallery-grid">
+							<a href="images/offer/mb1.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)" aria-label="Syrop Marie Brizard 1">
+								<img src="images/offer/mb1.jpg" alt="Syrop Marie Brizard" class="img-offer" loading="lazy" />
+							</a>
+							<a href="images/offer/mb2.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)" aria-label="Syrop Marie Brizard 2">
+								<img src="images/offer/mb2.jpg" alt="Syrop Marie Brizard" class="img-offer" loading="lazy" />
+							</a>
+							<a href="images/offer/mb3.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)" aria-label="Syrop Marie Brizard 3">
+								<img src="images/offer/mb3.jpg" alt="Syrop Marie Brizard" class="img-offer" loading="lazy" />
+							</a>
+							<a href="images/offer/mb4.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)" aria-label="Syrop Marie Brizard 4">
+								<img src="images/offer/mb4.jpg" alt="Syrop Marie Brizard" class="img-offer" loading="lazy" />
+							</a>
+							<a href="images/offer/mb5.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)" aria-label="Syrop Marie Brizard 5">
+								<img src="images/offer/mb5.jpg" alt="Syrop Marie Brizard" class="img-offer" loading="lazy" />
+							</a>
+							<a href="images/offer/mb6.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)" aria-label="Syrop Marie Brizard 6">
+								<img src="images/offer/mb6.jpg" alt="Syrop Marie Brizard" class="img-offer" loading="lazy" />
+							</a>
+							<a href="images/offer/mb7.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)" aria-label="Syrop Marie Brizard 7">
+								<img src="images/offer/mb7.jpg" alt="Syrop Marie Brizard" class="img-offer" loading="lazy" />
+							</a>
+							<a href="images/offer/mb8.jpg" data-fancybox="mb-oferta" data-caption="Cena: 25zł (netto)" aria-label="Syrop Marie Brizard 8">
+								<img src="images/offer/mb8.jpg" alt="Syrop Marie Brizard" class="img-offer" loading="lazy" />
+							</a>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<!-- Mobile Bars Rental Section -->
+			<section aria-labelledby="mobile-bars-heading">
+				<hr class="featurette-divider">
+				<article class="featurette">
+					<div class="col-lg-12">
+						<h2 id="mobile-bars-heading">Wynajem Barów</h2>
+						<p>Akademia Baru dysponuje własnymi barami (zdjęcia poniżej), szkłem oraz sprzętem niezbędnym do prawidłowej pracy barmana. Zapraszamy do skorzystania z naszej oferty wynajmu sprzętu i barów. Szczegółowych informacji udzielamy telefonicznie.</p>
+						<p><a class="btn btn-secondary" href="contact.php" role="button">Skontaktuj się z nami! &raquo;</a></p>
+					</div>
+					<div class="col-lg-12 gallery-grid">
+						<a href="images/offer/barmobilny1.jpg" data-fancybox="bary-mobilne" aria-label="Bar mobilny 1">
+							<img src="images/offer/barmobilny1.jpg" alt="Bar mobilny" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/barmobilny2.jpg" data-fancybox="bary-mobilne" aria-label="Bar mobilny 2">
+							<img src="images/offer/barmobilny2.jpg" alt="Bar mobilny" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/barmobilny3.jpg" data-fancybox="bary-mobilne" aria-label="Bar mobilny 3">
+							<img src="images/offer/barmobilny3.jpg" alt="Bar mobilny" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/barmobilny4.jpg" data-fancybox="bary-mobilne" aria-label="Bar mobilny 4">
+							<img src="images/offer/barmobilny4.jpg" alt="Bar mobilny" class="img-offer" loading="lazy" />
+						</a>
+					</div>
+				</article>
+			</section>
+
+			<!-- Ice Bars Section -->
+			<section aria-labelledby="ice-bars-heading">
+				<hr class="featurette-divider">
+				<article>
+					<div class="col-lg-12">
+						<h2 id="ice-bars-heading">Sprzedaż Barów Lodowych</h2>
+						<p>Proponujemy Państwu wykonanie profesjonalnego baru z lodu. Dzięki specjalnej technologii nasz lód jest idealnie przezroczysty, a bar utrzymuje się w nienaruszonym stanie od 8, nawet do 12 godzin. Bar montowany jest w specjalnej kuwecie odprowadzającej wodę i odpowiednio oświetlony, dlatego bez problemu może być montowany wewnątrz lokalu. Dopełnieniem baru lodowego mogą być nalewaki służące do serwowania alkoholu, kieliszki do koktajli, szkło, a wszystko to wykonane z lodu. Istnieje również możliwość wygrawerowania logo oraz zatopienia w barze lub w osobno stojącej rzeźbie lodowej wszelkich produktów Państwa firmy.</p>
+						<p><a class="btn btn-secondary" href="contact.php" role="button">Skontaktuj się z nami! &raquo;</a></p>
+					</div>
+					<div class="col-lg-12 gallery-grid">
+						<a href="images/offer/barlodowy1.jpg" data-fancybox="bary-lodowe" aria-label="Bar lodowy 1">
+							<img src="images/offer/barlodowy1.jpg" alt="Bar lodowy" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/barlodowy2.jpg" data-fancybox="bary-lodowe" aria-label="Bar lodowy 2">
+							<img src="images/offer/barlodowy2.jpg" alt="Bar lodowy" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/barlodowy3.jpg" data-fancybox="bary-lodowe" aria-label="Bar lodowy 3">
+							<img src="images/offer/barlodowy3.jpg" alt="Bar lodowy" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/barlodowy4.jpg" data-fancybox="bary-lodowe" aria-label="Bar lodowy 4">
+							<img src="images/offer/barlodowy4.jpg" alt="Bar lodowy" class="img-offer" loading="lazy" />
+						</a>
+					</div>
+				</article>
+			</section>
+
+			<!-- Bartending Shows Section -->
+			<section aria-labelledby="shows-heading">
+				<hr class="featurette-divider">
+				<article class="featurette">
+					<div class="col-lg-12">
+						<h2 id="shows-heading">Pokazy Barmańskie oraz wynajem barmanów na przyjęcia</h2>
+						<p>Zapraszamy do skorzystania z naszej oferty profesjonalnej i kompleksowej obsługi barmańskiej oraz pokazów barmańskich. Nasz personel nie tylko przygotuje smaczne i barwne cocktaile, ale również zapewni gościom Państwa przyjęcia, wesela czy konferencji rozrywkę na najwyższym poziomie. Wynajmujemy także barmanów na wesela, urodziny oraz wszelkie inne imprezy. Ceny oraz terminy pokazów ustalane są indywidualnie, zapraszamy do działu kontakt.</p>
+						<p><a class="btn btn-secondary" href="contact.php" role="button">Skontaktuj się z nami! &raquo;</a></p>
+					</div>
+					<div class="gallery-grid">
+						<a href="images/offer/pokaz1.jpg" data-fancybox="pokaz" aria-label="Pokaz barmański 1">
+							<img src="images/offer/pokaz1.jpg" alt="Pokaz barmański" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/pokaz2.jpg" data-fancybox="pokaz" aria-label="Pokaz barmański 2">
+							<img src="images/offer/pokaz2.jpg" alt="Pokaz barmański" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/pokaz3.jpg" data-fancybox="pokaz" aria-label="Pokaz barmański 3">
+							<img src="images/offer/pokaz3.jpg" alt="Pokaz barmański" class="img-offer" loading="lazy" />
+						</a>
+						<a href="images/offer/pokaz4.jpg" data-fancybox="pokaz" aria-label="Pokaz barmański 4">
+							<img src="images/offer/pokaz4.jpg" alt="Pokaz barmański" class="img-offer" loading="lazy" />
+						</a>
+					</div>
+				</article>
+			</section>
+
+			<!-- Bar Equipment Section -->
+			<section aria-labelledby="equipment-heading">
+				<hr class="featurette-divider">
+				<article class="featurette">
+					<div class="col-lg-12">
+						<h2 id="equipment-heading">Sprzęt barmański</h2>
+						<p>Sprawdź naszą szeroką ofertę, wynajęcie barmana na przyjęcie to nie tylko smaczne drinki ale i niezapomniane wrażenia związane z pokazem. Bary lodowe w połączeniu z oświetleniem wywołują niesamowite wrażenie i gwarantują zabawę na całą noc. Sprawdź także nasze syropy - szeroka gama smaków sprawi że każdy znajdzie coś dla siebie!</p>
+						<p>W naszej ofercie znajdziesz także serwetki, słomki, wykałaczki oraz więcej sprzętu potrzebnemu barmanowi!</p>
+						<p><a class="btn btn-secondary" href="contact.php" role="button">Skontaktuj się z nami! &raquo;</a></p>
+					</div>
+				</article>
+			</section>
+
+			<hr class="featurette-divider">
+		</div>
+	</main>
+
+	<!-- Footer Section -->
+	<footer class="container-fluid foot">
+		<div class="footer row justify-content-center align-items-center">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://long-table.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Long Table - strona partnerska">
+					<img class="img-fluid" src="images/longtable.png" alt="Long Table logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://akademiabaru.pl" aria-label="Akademia Baru - strona główna">
+					<img class="img-fluid" src="images/logo.png" alt="Akademia Baru logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://lodowe.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Lodowe.com.pl - strona partnerska">
+					<img src="images/lodowe.png" class="img-fluid" alt="Lodowe.com.pl logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://www.long-table.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Long Tables - strona partnerska">
+					<img class="img-fluid" src="images/longtables.png" alt="Long Tables logo" loading="lazy">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<!-- Fancybox 5 JS (No jQuery required) -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script>
+		// Initialize Fancybox
+		Fancybox.bind('[data-fancybox]', {
+			// Custom options
+			Toolbar: {
+				display: {
+					left: ["infobar"],
+					middle: [],
+					right: ["close"]
+				}
+			}
+		});
+	</script>
+
+	<!-- Custom JavaScript -->
+	<script src="js/backtotop.js"></script>
 	<script src="js/smoothscroll.js"></script>
 </body>
+</html>
