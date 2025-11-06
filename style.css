@@ -1,0 +1,116 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	color: #5a5a5a;
+}
+.navbar {
+	font-size: 24px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #efb000;
+}
+.logo {
+	height: 6vh;
+}
+.nav-item {
+	margin-left: 30px;
+}
+.dropdown-item.active, .dropdown-item:active {
+	color: #fff;
+    text-decoration: none;
+    background-color: #dea000;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #dea000;
+}
+.featurette-divider {
+    margin: 5rem 0;
+}
+.btn-secondary {
+	background-color: white;
+	color: black;
+}
+.img-offer {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+}
+.a-dis {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.gallery div {
+	width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 10px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s
+
+}
+.btn-secondary:active {
+	background-color: #dea000;
+}
+.btn-secondary:hover {
+	background-color: #dea000;
+	border: none;
+}
+.contact {
+	min-height: 55vh;
+}
+.foot {
+	background-color: #3C3939;
+}
+.footer {
+	margin-left: 2vh;
+	margin-right: 2vh;
+}
+.btn-primary {
+	background-color: rgb(0, 0, 0, .7);
+	border-color: rgb(255, 255, 255);
+}
+.btn-primary:hover {
+	background-color: #cd9000;
+	border-color: #dea000;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    height: 70px;
+    width: 70px;
+    background-color: #dea000;
+    border: none;
+    border-radius: 20px;
+}
+#myBtn img {
+	height: 50px;
+	width: auto;
+	cursor: pointer;
+
+}
+.carousel-caption {
+    top: 70%;
+    bottom: auto;
+    text-shadow: black;
+}
+.carousel-caption h3 {
+	text-shadow: 1px 1px rgb(0,0,0);
+}
+button:focus{
+    outline: none;
+    text-decoration: none;
+}
+@media screen and (min-width: 1600px) {
+  .carousel-item {
+	height: 100vh;
+}
+}
