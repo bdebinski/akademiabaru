@@ -1,0 +1,32 @@
+# robots.txt for akademiabaru.pl
+# Generated to improve SEO and crawler efficiency
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://akademiabaru.pl/sitemap.xml
+
+# Disallow admin and private areas (if any)
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Allow crawling of important directories
+Allow: /images/
+Allow: /js/
+Allow: /style.css
+
+# Crawl-delay (optional, uncomment if needed)
+# Crawl-delay: 10
+
+# Specific user-agents (optional optimization)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
