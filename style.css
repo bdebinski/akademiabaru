@@ -38,6 +38,11 @@ body {
 	color: var(--color-text);
 	font-size: var(--font-size-base);
 	line-height: var(--line-height-base);
+	overflow-x: hidden;
+}
+
+html {
+	overflow-x: hidden;
 }
 
 /* Typography Hierarchy */
@@ -154,6 +159,7 @@ li {
 }
 
 .dropdown-menu {
+	background-color: var(--color-dark);
 	border: none;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 	border-radius: 8px;
@@ -164,6 +170,19 @@ li {
 	border-radius: 4px;
 	margin-bottom: 2px;
 	padding: var(--spacing-xs) var(--spacing-sm);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 991px) {
+	.dropdown-menu {
+		background-color: transparent;
+		box-shadow: none;
+		padding-left: 1rem;
+	}
+
+	.dropdown-item {
+		color: rgba(255, 255, 255, 0.8);
+	}
 }
 
 /* ==========================================
@@ -292,11 +311,18 @@ button:focus {
 .carousel-caption {
 	top: 70%;
 	bottom: auto;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 2rem;
+	border-radius: 12px;
+	backdrop-filter: blur(5px);
 }
 
 .carousel-caption h2,
 .carousel-caption h3 {
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	color: #ffffff !important;
+	text-shadow:
+		2px 2px 8px rgba(0, 0, 0, 0.9),
+		0 0 20px rgba(0, 0, 0, 0.8);
 	font-weight: 700;
 }
 
@@ -454,17 +480,18 @@ button:focus {
    ========================================== */
 .foot {
 	background-color: var(--color-dark);
-	padding: 2rem 0;
+	padding: 3rem 2rem 2rem 2rem;
 	margin-top: 3rem;
 }
 
 .footer {
-	margin-left: 2vh;
-	margin-right: 2vh;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 1rem;
 }
 
 .footer img {
-	max-height: 120px;
+	max-height: 100px;
 	width: auto;
 	transition: transform var(--transition-speed) ease;
 }
