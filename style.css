@@ -994,47 +994,6 @@ button:focus {
 }
 
 /* ==========================================
-   Newsletter Form in Footer
-   ========================================== */
-.newsletter-form .form-control {
-	background-color: rgba(255, 255, 255, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	color: var(--color-white);
-	font-size: 0.875rem;
-	padding: 0.5rem 0.75rem;
-}
-
-.newsletter-form .form-control::placeholder {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.newsletter-form .form-control:focus {
-	background-color: rgba(255, 255, 255, 0.15);
-	border-color: var(--color-primary);
-	color: var(--color-white);
-	box-shadow: 0 0 0 0.2rem rgba(194, 133, 0, 0.25);
-}
-
-.newsletter-form .btn-primary {
-	font-size: 0.875rem;
-	padding: 0.5rem 1rem;
-	white-space: nowrap;
-}
-
-.newsletter-message {
-	font-size: 0.75rem;
-	min-height: 20px;
-}
-
-.newsletter-message.success {
-	color: #4caf50;
-}
-
-.newsletter-message.error {
-	color: #f44336;
-}
-
-/* ==========================================
    Accessibility Improvements
    ========================================== */
 .visually-hidden {

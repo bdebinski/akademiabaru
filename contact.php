@@ -303,9 +303,9 @@
 			</div>
 		</div>
 
-		<!-- Contact Info and Newsletter in Footer -->
+		<!-- Contact Info in Footer -->
 		<div class="row mt-4 pt-4 border-top">
-			<div class="col-lg-3 col-md-6 text-center text-md-start mb-3">
+			<div class="col-lg-4 col-md-6 text-center text-md-start mb-3">
 				<h4 class="h6 text-white mb-3">Kontakt</h4>
 				<p class="text-white-50 small mb-1">
 					<a href="tel:+48501494787" class="text-white-50 text-decoration-none">📞 +48 501 494 787</a>
@@ -315,26 +315,13 @@
 				</p>
 				<p class="text-white-50 small mb-0">📍 ul. Żeromskiego 49, 90-624 Łódź</p>
 			</div>
-			<div class="col-lg-3 col-md-6 text-center mb-3">
+			<div class="col-lg-4 col-md-6 text-center mb-3">
 				<h4 class="h6 text-white mb-3">Szybkie linki</h4>
 				<p class="mb-1"><a href="courses.html" class="text-white-50 text-decoration-none small">Kursy</a></p>
 				<p class="mb-1"><a href="offer.html" class="text-white-50 text-decoration-none small">Oferta</a></p>
 				<p class="mb-0"><a href="gallery.php" class="text-white-50 text-decoration-none small">Galeria</a></p>
 			</div>
-			<div class="col-lg-3 col-md-6 text-center mb-3">
-				<h4 class="h6 text-white mb-3">Newsletter</h4>
-				<p class="text-white-50 small mb-2">Zapisz się na newsletter i bądź na bieżąco z naszymi kursami!</p>
-				<form class="newsletter-form" id="newsletterForm" action="#" method="POST">
-					<div class="input-group input-group-sm">
-						<input type="email" class="form-control" placeholder="Twój email" aria-label="Email do newslettera" required>
-						<button class="btn btn-primary" type="submit" aria-label="Zapisz się">
-							Zapisz się
-						</button>
-					</div>
-					<div class="newsletter-message mt-2" id="newsletterMessage"></div>
-				</form>
-			</div>
-			<div class="col-lg-3 col-md-6 text-center text-md-end">
+			<div class="col-lg-4 col-md-12 text-center text-md-end">
 				<p class="text-white-50 small mb-0">&copy; 2025 Akademia Baru. Wszystkie prawa zastrzeżone.</p>
 			</div>
 		</div>
@@ -370,6 +357,5 @@
 	<script src="js/backtotop.js"></script>
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/scrollprogress.js"></script>
-	<script src="js/newsletter.js"></script>
 </body>
 </html>
