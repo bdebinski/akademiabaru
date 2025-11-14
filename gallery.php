@@ -1,100 +1,211 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Akademia Baru - kursy, pokazy, imprezy, wynajem sprzętu barmańskiego, syropy, fruit lounge i syrup lounge. Barmani na wesela  i imprezy, a także wiele innych.">
-    <meta name="keywords" content="akademia baru, pokaz barmański, kurs barmański, kurs baristy, kurs kelnerski, sommelier, kurs somelierski, wesela, obsługa baru, event, flair, organizacja imprez, imprezy integracyjne, imprezy okolicznościowe, szkolenia, impreza firmowa, bary, bary mobilne, bary przenosne, wynajem barow, lodz, łódź, szkolenia barmańskie, kursy, pokazy barmańskie,team barmański,flair, konkursy,warsztaty, obsługa na weselach, obsługa na bankietach, kolorowe drinki, płonące drinki, płonące bary, sklep, sklep z akcesoriami barmańskimi,syropy, shakery, akcesoria do drinków, szkło, miary barowe,blendery, kruszarki,kostkarki,noże, noże do twistów,łyżki barmańskie, sitka, świecące kostki lodu, świecące mieszadełka, świecące szklanki, świecące kieliszki, syropy monin, syropy finest call,słomki, mieszadełka, termosy izotermiczne, styropiany, steroboxy, lód, bary lodowe, kieliszki lodowe,kule lodowe, lód suchy, lód kruszony, pokazy żąglerki, kursy somalierskie, kursy baristyczne, kursy kelnerskie, szablowanie szampana, fruit lounge, syrup lounge">
+	<meta name="description" content="Galeria zdjęć - Akademia Baru Łódź. Zobacz nasze kursy, pokazy barmańskie, imprezy i wydarzenia.">
+	<meta name="keywords" content="galeria akademia baru, zdjęcia kursy barmańskie, pokazy barmańskie zdjęcia, wydarzenia łódź">
+	<meta name="author" content="Akademia Baru">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://akademiabaru.pl/gallery.php">
 	<link rel="icon" href="images/icon.ico">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://akademiabaru.pl/gallery.php">
+	<meta property="og:title" content="Galeria - Akademia Baru Łódź">
+	<meta property="og:description" content="Zobacz zdjęcia z naszych kursów i pokazów barmańskich.">
+	<meta property="og:image" content="https://akademiabaru.pl/images/logo.png">
+	<meta property="og:locale" content="pl_PL">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Galeria - Akademia Baru">
+	<meta name="twitter:description" content="Zdjęcia z kursów i pokazów barmańskich">
+	<meta name="twitter:image" content="https://akademiabaru.pl/images/logo.png">
+
+	<!-- Performance Optimization -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://cdn.jsdelivr.net">
+	<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+	<!-- Bootstrap 5.3 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<!-- Fancybox 5 CSS (No jQuery required) -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Oswald:300" rel="stylesheet">
-	<title>Akademia Baru</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+	<title>Galeria - Akademia Baru</title>
 </head>
 <body>
-	<button onclick="function()" id="myBtn" title="Go to top"><img src="images/back-to-top-arrow.png"></button>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3C3939;">
-		
+	<!-- Back to Top Button -->
+	<button id="backToTopBtn" aria-label="Wróć na górę strony" title="Wróć na górę">
+		<img src="images/back-to-top-arrow.png" alt="Strzałka w górę" width="50" height="50">
+	</button>
 
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-  				<li class="nav-item">
-  					<a class="nav-link" href="index.html">Akademia Baru <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item dropdown">
-  					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-  					Kursy
-  					</a>
-  					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				        <a class="dropdown-item" href="courses.html#wine">Warsztaty Winiarskie</a>
-				        <a class="dropdown-item" href="courses.html#barist">Kurs Baristyczny</a>
-				        <a class="dropdown-item" href="courses.html#waiter">Kurs Kelnerski</a>
-				        <a class="dropdown-item" href="courses.html#whisky">Warsztaty Whisky</a>
-				        <a class="dropdown-item" href="courses.html#bartender">Szkolenie Barmańskie</a>
-				        <a class="dropdown-item" href="courses.html#cigaro">Warsztaty Cygaro</a>
-        			</div>
-  				</li>
-  				<li class="nav-item active">
-  					<a class="nav-link" href="gallery.php">Galeria <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item ">
-  					<a class="nav-link" href="offer.html">Oferta <span class="sr-only">(current)</span></a>
-  				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" href="contact.php">Kontakt <span class="sr-only">(current)</span></a>
-  				</li>
-  			</ul>
+	<!-- Header Navigation -->
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-custom" aria-label="Główna nawigacja">
+			<div class="container-fluid">
+				<!-- Logo/Brand -->
+				<a class="navbar-brand" href="index.html" aria-label="Akademia Baru - strona główna">
+					<img src="images/logo.png" alt="Akademia Baru logo" width="50" height="50">
+				</a>
 
-  		</div>
+				<!-- Mobile Menu Toggle -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Przełącz menu nawigacji">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-	</nav>
-	
-		<div class="container-fluid">
+				<!-- Navigation Links -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Akademia Baru</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="courses.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Kursy
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="courses.html#wine">Warsztaty Winiarskie</a></li>
+								<li><a class="dropdown-item" href="courses.html#barist">Kurs Baristyczny</a></li>
+								<li><a class="dropdown-item" href="courses.html#waiter">Kurs Kelnerski</a></li>
+								<li><a class="dropdown-item" href="courses.html#whisky">Warsztaty Whisky</a></li>
+								<li><a class="dropdown-item" href="courses.html#bartender">Szkolenie Barmańskie</a></li>
+								<li><a class="dropdown-item" href="courses.html#cigaro">Warsztaty Cygaro</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="gallery.php" aria-current="page">Galeria</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="offer.html">Oferta</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.php">Kontakt</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Main Content -->
+	<main>
+		<div class="container marketing">
 			<hr class="featurette-divider">
-			<div class="row gallery justify-content-center">
-				<?php
-				$dirname = "images/gallery/";
-			$images = glob($dirname."*.jpg");
-		
-			foreach($images as $image) {
-			  echo '<div class="col-xl-2 col-lg-4 col-md-4 col-6 mini" style="background-image: url('.$image.')">'.'<a href="'.$image.'" data-fancybox="images" class="a-dis">'.'</a>'.'</div>';
-		}
-				?>
-	</div>
-		
 
-		<hr class="featurette-divider">
+			<!-- Page Title -->
+			<section class="text-center mb-5" aria-labelledby="gallery-heading">
+				<h1 id="gallery-heading">Galeria</h1>
+				<p class="lead">Zobacz zdjęcia z naszych kursów, pokazów i wydarzeń</p>
+			</section>
 
+			<!-- Gallery Grid -->
+			<section aria-label="Galeria zdjęć">
+				<div class="gallery-grid">
+					<?php
+					$dirname = "images/gallery/";
+					$images = glob($dirname."*.jpg");
+
+					if ($images && count($images) > 0) {
+						foreach($images as $image) {
+							$imageName = basename($image);
+							echo '<a href="'.$image.'" data-fancybox="gallery" aria-label="Zobacz zdjęcie: '.$imageName.'">';
+							echo '<img src="'.$image.'" alt="Zdjęcie z galerii" class="img-offer" loading="lazy" />';
+							echo '</a>';
+						}
+					} else {
+						echo '<div class="col-12 text-center">';
+						echo '<p class="lead">Brak zdjęć w galerii. Wkrótce dodamy nowe zdjęcia!</p>';
+						echo '</div>';
+					}
+					?>
+				</div>
+			</section>
+
+			<hr class="featurette-divider">
 		</div>
+	</main>
 
-		<div class="container-fluid foot">
-			<div class="footer row">
-				<div class="col-lg-3">
-					<a href="http://long-table.com.pl">
-					<img class="img-fluid" src="images/longtable.png">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://akademiabaru.pl">
-					<img class="img-fluid" src="images/logo.png">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://lodowe.com.pl">
-					<img src="images/lodowe.png" class="img-fluid">
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a href="http://www.long-table.com.pl">
-					<img class="img-fluid" src="images/longtables.png">
-					</a>
-				</div>
+	<!-- Footer Section -->
+	<footer class="container-fluid foot">
+		<div class="footer row justify-content-center align-items-center">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://long-table.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Long Table - strona partnerska">
+					<img class="img-fluid" src="images/longtable.png" alt="Long Table logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://akademiabaru.pl" aria-label="Akademia Baru - strona główna">
+					<img class="img-fluid" src="images/logo.png" alt="Akademia Baru logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://lodowe.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Lodowe.com.pl - strona partnerska">
+					<img src="images/lodowe.png" class="img-fluid" alt="Lodowe.com.pl logo" loading="lazy">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 mb-lg-0">
+				<a href="http://www.long-table.com.pl" target="_blank" rel="noopener noreferrer" aria-label="Long Tables - strona partnerska">
+					<img class="img-fluid" src="images/longtables.png" alt="Long Tables logo" loading="lazy">
+				</a>
 			</div>
 		</div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!-- Contact Info in Footer -->
+		<div class="row mt-4 pt-4 border-top">
+			<div class="col-lg-4 col-md-6 text-center text-md-start mb-3">
+				<h4 class="h6 text-white mb-3">Kontakt</h4>
+				<p class="text-white-50 small mb-1">
+					<a href="tel:+48501494787" class="text-white-50 text-decoration-none">📞 +48 501 494 787</a>
+				</p>
+				<p class="text-white-50 small mb-1">
+					<a href="mailto:office@long-table.com.pl" class="text-white-50 text-decoration-none">✉️ office@long-table.com.pl</a>
+				</p>
+				<p class="text-white-50 small mb-0">📍 ul. Żeromskiego 49, 90-624 Łódź</p>
+			</div>
+			<div class="col-lg-4 col-md-6 text-center mb-3">
+				<h4 class="h6 text-white mb-3">Szybkie linki</h4>
+				<p class="mb-1"><a href="courses.html" class="text-white-50 text-decoration-none small">Kursy</a></p>
+				<p class="mb-1"><a href="offer.html" class="text-white-50 text-decoration-none small">Oferta</a></p>
+				<p class="mb-0"><a href="contact.php" class="text-white-50 text-decoration-none small">Kontakt</a></p>
+			</div>
+			<div class="col-lg-4 col-md-12 text-center text-md-end">
+				<p class="text-white-50 small mb-0">&copy; 2025 Akademia Baru. Wszystkie prawa zastrzeżone.</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<!-- Fancybox 5 JS (No jQuery required) -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script>
+		// Initialize Fancybox
+		Fancybox.bind('[data-fancybox]', {
+			Toolbar: {
+				display: {
+					left: ["infobar"],
+					middle: [],
+					right: ["close"]
+				}
+			}
+		});
+	</script>
+
+	<!-- Custom JavaScript -->
 	<script src="js/backtotop.js"></script>
 	<script src="js/smoothscroll.js"></script>
+	<script src="js/scrollanimations.js"></script>
 </body>
+</html>
