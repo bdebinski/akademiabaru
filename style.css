@@ -96,7 +96,7 @@ li {
    ========================================== */
 .navbar {
 	font-size: 1.125rem;
-	padding: var(--spacing-sm) var(--spacing-md);
+	padding: 1rem 1.5rem;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -122,10 +122,11 @@ li {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-	font-size: 1rem;
-	font-weight: 400;
-	padding: var(--spacing-xs) var(--spacing-sm);
+	font-size: 1.0625rem;
+	font-weight: 500;
+	padding: 0.5rem 1rem;
 	transition: all var(--transition-speed) ease;
+	letter-spacing: 0.3px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -140,7 +141,7 @@ li {
 }
 
 .nav-item {
-	margin-left: var(--spacing-sm);
+	margin-left: 0.5rem;
 }
 
 .dropdown-item.active,
@@ -480,8 +481,8 @@ button:focus {
    ========================================== */
 .foot {
 	background-color: var(--color-dark);
-	padding: 3rem 2rem 2rem 2rem;
-	margin-top: 3rem;
+	padding: 3.5rem 2rem 2rem 2rem;
+	margin-top: 4rem;
 }
 
 .footer {
@@ -491,14 +492,60 @@ button:focus {
 }
 
 .footer img {
-	max-height: 100px;
+	max-height: 80px;
 	width: auto;
 	transition: transform var(--transition-speed) ease;
+	opacity: 0.9;
 }
 
 .footer a:hover img,
 .footer a:focus img {
-	transform: scale(1.1);
+	transform: scale(1.08);
+	opacity: 1;
+}
+
+/* Footer headings */
+.foot h4 {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: var(--color-white);
+	margin-bottom: 1.25rem;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+/* Footer links and text */
+.foot p {
+	font-size: 0.9375rem;
+	line-height: 1.8;
+	margin-bottom: 0.75rem;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.foot a {
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+	transition: color var(--transition-speed) ease;
+	font-size: 0.9375rem;
+}
+
+.foot a:hover,
+.foot a:focus {
+	color: var(--color-primary-light);
+}
+
+/* Footer border */
+.foot .border-top {
+	border-color: rgba(255, 255, 255, 0.15) !important;
+	margin-top: 2.5rem;
+	padding-top: 2rem;
+}
+
+/* Copyright text */
+.foot .small {
+	font-size: 0.875rem !important;
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1.6;
 }
 
 /* ==========================================

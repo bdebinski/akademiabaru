@@ -305,24 +305,24 @@
 
 		<!-- Contact Info in Footer -->
 		<div class="row mt-4 pt-4 border-top">
-			<div class="col-lg-4 col-md-6 text-center text-md-start mb-3">
-				<h4 class="h6 text-white mb-3">Kontakt</h4>
-				<p class="text-white-50 small mb-1">
-					<a href="tel:+48501494787" class="text-white-50 text-decoration-none">📞 +48 501 494 787</a>
+			<div class="col-lg-4 col-md-6 text-center text-md-start mb-4 mb-lg-0">
+				<h4>Kontakt</h4>
+				<p class="mb-2">
+					<a href="tel:+48501494787">📞 +48 501 494 787</a>
 				</p>
-				<p class="text-white-50 small mb-1">
-					<a href="mailto:office@long-table.com.pl" class="text-white-50 text-decoration-none">✉️ office@long-table.com.pl</a>
+				<p class="mb-2">
+					<a href="mailto:office@long-table.com.pl">✉️ office@long-table.com.pl</a>
 				</p>
-				<p class="text-white-50 small mb-0">📍 ul. Żeromskiego 49, 90-624 Łódź</p>
+				<p class="mb-0">📍 ul. Żeromskiego 49, 90-624 Łódź</p>
 			</div>
-			<div class="col-lg-4 col-md-6 text-center mb-3">
-				<h4 class="h6 text-white mb-3">Szybkie linki</h4>
-				<p class="mb-1"><a href="courses.html" class="text-white-50 text-decoration-none small">Kursy</a></p>
-				<p class="mb-1"><a href="offer.html" class="text-white-50 text-decoration-none small">Oferta</a></p>
-				<p class="mb-0"><a href="gallery.php" class="text-white-50 text-decoration-none small">Galeria</a></p>
+			<div class="col-lg-4 col-md-6 text-center mb-4 mb-lg-0">
+				<h4>Szybkie linki</h4>
+				<p class="mb-2"><a href="courses.html">Kursy</a></p>
+				<p class="mb-2"><a href="offer.html">Oferta</a></p>
+				<p class="mb-0"><a href="gallery.php">Galeria</a></p>
 			</div>
 			<div class="col-lg-4 col-md-12 text-center text-md-end">
-				<p class="text-white-50 small mb-0">&copy; 2025 Akademia Baru. Wszystkie prawa zastrzeżone.</p>
+				<p class="small mb-0">&copy; 2025 Akademia Baru. Wszystkie prawa zastrzeżone.</p>
 			</div>
 		</div>
 	</footer>
