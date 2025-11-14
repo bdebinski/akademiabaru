@@ -136,6 +136,21 @@
 							<h2 class="h4 mb-4">Wyślij wiadomość</h2>
 
 							<?php
+							// Get course parameter from URL
+							$courseParam = $_GET['course'] ?? '';
+							$courseName = '';
+							$courseNames = [
+								'warsztaty-winiarskie' => 'Warsztaty winiarskie',
+								'kurs-baristyczny' => 'Kurs baristyczny',
+								'kurs-kelnerski' => 'Kurs kelnerski',
+								'warsztaty-whisky' => 'Warsztaty whisky',
+								'szkolenie-barmanskie' => 'Szkolenie barmańskie',
+								'warsztaty-cygaro' => 'Warsztaty cygaro'
+							];
+							if (isset($courseNames[$courseParam])) {
+								$courseName = $courseNames[$courseParam];
+							}
+
 							$messageSent = false;
 							$errorMessage = '';
 
@@ -174,6 +189,12 @@
 							}
 							?>
 
+							<?php if (!empty($courseName) && !$messageSent): ?>
+								<div class="alert alert-info" role="alert">
+									<strong>📚 Zapytanie o kurs:</strong> <?php echo htmlspecialchars($courseName); ?>
+								</div>
+							<?php endif; ?>
+
 							<?php if ($messageSent): ?>
 								<div class="alert alert-success" role="alert">
 									<strong>Dziękujemy!</strong> Twoja wiadomość została wysłana. Skontaktujemy się z Tobą wkrótce.
@@ -184,7 +205,7 @@
 								</div>
 							<?php endif; ?>
 
-							<form method="POST" action="contact.php" class="needs-validation" novalidate>
+							<form method="POST" action="contact.php<?php echo !empty($courseParam) ? '?course=' . urlencode($courseParam) : ''; ?>" class="needs-validation" novalidate>
 								<div class="mb-3">
 									<label for="name" class="form-label">Imię i nazwisko <span class="text-danger">*</span></label>
 									<input type="text" class="form-control" id="name" name="name" required>
@@ -208,7 +229,11 @@
 
 								<div class="mb-3">
 									<label for="message" class="form-label">Wiadomość <span class="text-danger">*</span></label>
-									<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+									<textarea class="form-control" id="message" name="message" rows="5" required><?php
+										if (!empty($courseName) && !$messageSent) {
+											echo "Dzień dobry,\n\nChciałbym uzyskać więcej informacji na temat kursu: " . htmlspecialchars($courseName) . ".\n\nProszę o kontakt.\n\nPozdrawiam";
+										}
+									?></textarea>
 									<div class="invalid-feedback">
 										Proszę wpisać wiadomość.
 									</div>

@@ -558,6 +558,109 @@ button:focus {
 }
 
 /* ==========================================
+   Course CTA Buttons and Banner
+   ========================================== */
+/* CTA Button for individual courses */
+.course-cta-btn {
+	display: inline-block;
+	margin-top: 1.5rem;
+	padding: 0.75rem 2rem;
+	background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+	color: var(--color-white);
+	text-decoration: none;
+	border-radius: 50px;
+	font-weight: 600;
+	font-size: 1rem;
+	transition: all var(--transition-speed) ease;
+	box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+	border: none;
+}
+
+.course-cta-btn:hover,
+.course-cta-btn:focus {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(255, 193, 7, 0.4);
+	color: var(--color-white);
+	background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+}
+
+.course-cta-btn:active {
+	transform: translateY(0);
+}
+
+/* CTA Banner at the end of courses */
+.cta-banner {
+	background: linear-gradient(135deg, var(--color-dark) 0%, #1a1a1a 100%);
+	padding: 3rem 2rem;
+	margin: 3rem 0;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+	position: relative;
+	overflow: hidden;
+}
+
+.cta-banner::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,193,7,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+	opacity: 0.5;
+}
+
+.cta-banner-content {
+	position: relative;
+	z-index: 1;
+}
+
+.cta-banner h2 {
+	color: var(--color-white);
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.cta-banner p {
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 1.125rem;
+	margin-bottom: 2rem;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cta-banner-btn {
+	display: inline-block;
+	padding: 1rem 3rem;
+	background: var(--color-primary);
+	color: var(--color-dark);
+	text-decoration: none;
+	border-radius: 50px;
+	font-weight: 700;
+	font-size: 1.125rem;
+	transition: all var(--transition-speed) ease;
+	box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.cta-banner-btn:hover,
+.cta-banner-btn:focus {
+	transform: translateY(-3px) scale(1.05);
+	box-shadow: 0 12px 35px rgba(255, 193, 7, 0.5);
+	color: var(--color-dark);
+	background: var(--color-primary-light);
+}
+
+.cta-banner-btn:active {
+	transform: translateY(-1px) scale(1.02);
+}
+
+/* ==========================================
    Contact Page
    ========================================== */
 .contact {
